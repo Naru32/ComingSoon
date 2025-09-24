@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+</head>
+<body>
+    <h1>Product details</h1>
+    <table border="1px solid black" cellspacing="2px" cellpadding="4px">
+        <thead style="background-color: aqua;">
+           <tr>
+            <th>Device</th>
+            <th>Brand</th>
+            <th colspan="2">Specification</th>
+            <!-- <th></th> -->
+           </tr>
+        </thead>
+        <tbody>
+         <tr>
+            <td rowspan="3">Samsung</td>
+            <td rowspan="3">Apple</td>
+            <td style="background-color: cadetblue;">Model</td>
+            <td style="background-color: cadetblue;">Storage</td>
+         </tr>
+         <tr>
+            <!-- <td></td>
+            <td></td> -->
+            <td>Iphone 12 pro</td>
+            <td>256GB</td>
+         </tr>
+         <tr>
+            <!-- <td></td>
+            <td></td> -->
+            <td>Iphone SE</td>
+            <td>128GB</td>
+         </tr>
+         <tr>
+            <td>Laptop</td>
+            <td>HP</td>
+            <td colspan="2">15.6" Display</td>
+            <!-- <td></td> -->
+         </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>Tablet</th>
+                <th>Samsung</th>
+                <th colspan="2">10.5" Display</th>
+                <!-- <th></th> -->
+            </tr>
+         </tfoot>
+    </table>
+    <br>
+    <br>
+    <table border="1px solid black" cellpadding="5px" cellspacing="2px">
+        <thead>
+            <tr>
+                <th rowspan="2">Heading</th>
+                <th>Students</th>
+                <th colspan="3">Details</th>
+            </tr>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Department</th>
+                <th>Roll Number</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="4">Student List</td>
+                <td>1</td>
+                <td>Victor</td>
+                <td>CS</td>
+                <td>12345</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Williams</td>
+                <td>Electronics</td>
+                <td>23456</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Harry</td>
+                <td>Electrical</td>
+                <td>34567</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Rick</td>
+                <td>Civil</td>
+                <td>45678</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

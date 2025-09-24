@@ -1,0 +1,109 @@
+body{
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(188, 240, 240);
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+
+.box{
+    position: relative;
+    top: 0px;
+    left: 0px;
+    height: 150px;
+    width: 150px;
+    background-color: #fff;
+}
+
+@keyframes motion {
+   0%{
+     top: 0px;
+     left: 50px;
+   }
+   5%{
+    top: 0px;
+    left: 100px;
+   }
+   10%{
+    top: 0px;
+    left: 150px;
+   }
+   15%{
+    top: 0px;
+    left: 200px;
+   }
+   20%{
+    top: 0px;
+    left: 250px;
+   }
+   25%{
+    top: 50px;
+    left: 250px;
+   }
+   30%{
+    top: 100px;
+    left: 250px;
+   }
+   35%{
+    top: 150px;
+    left: 250px;
+   }
+   40%{
+    top: 200px;
+    left: 250px;
+   }
+   45%{
+    top: 250px;
+    left: 250px;
+   }
+   50%{
+    top: 250px;
+    right: 50px;
+   }
+   55%{
+    top: 250px;
+    right: 100px;
+   }
+   60%{
+    top: 250px;
+    right: 150px;
+   }
+   65%{
+    top: 250px;
+    right: 200px;
+   }
+   70%{
+    top: 250px;
+    right: 250px;
+   }
+   75%{
+    bottom: 50px;
+    left: 0px;
+   }
+   80%{
+    bottom: 100px;
+    left: 0px;
+   }
+   85%{
+    bottom: 150px;
+    left: 0px;
+   }
+   90%{
+    bottom: 200px;
+    left: 0px;
+   }
+   95%{
+    bottom: 250px;
+    left: 0px;
+   }
+   100%{
+    top: 0px;
+    left: 0px;
+   }
+}
+
+.box:hover{
+animation: motion 15s linear 0s 1 forwards;
+}
+

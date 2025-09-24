@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clone</title>
+    <link rel="stylesheet" href="./index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <section class="back">
+      <!-- header section -->
+      <header class="header">
+        <nav class="navbar">
+          <h1>ComingSoon</h1>
+          <aside class="menu">
+            <ul type="none">
+              <li><a href="#home" id="Home">Home</a></li>
+              <li>
+                <a href="#about" id="About">About</a>
+                <div class="hovored"></div>
+              </li>
+              <li><a href="#contact" id="Contact">Contact</a></li>
+            </ul>
+          </aside>
+        </nav>
+      </header>
+      <!-- main secion -->
+      <main class="main">
+        <!-- Hero section -->
+        <section id="home" tabindex="1">
+          <!-- <article class="Hero"> -->
+          <header class="heading">ComingSoon</header>
+          <summary>
+            We are still working on our website. Stay tuned for updates
+          </summary>
+          <article class="counter">
+            <div id="day">
+              <p>72</p>
+              <p>Days</p>
+            </div>
+            <div id="hrs">
+              <p>12</p>
+              <p>hours</p>
+            </div>
+            <div id="min">
+              <p>26</p>
+              <p>minutes</p>
+            </div>
+            <div id="sec">
+              <p>16</p>
+              <p>seconds</p>
+            </div>
+          </article>
+          <p class="msg">Subscribe now to get latest updates</p>
+          <aside class="Subscribe">
+            <input type="text" name="email" id="email" />
+            <input type="submit" value="Subscribe" id="btn" />
+          </aside>
+          <aside class="social">
+            <a id="x"><i class="fa-brands fa-x-twitter"></i></a>
+            <a id="fb"><i class="fa-brands fa-facebook"></i></a>
+            <a id="insta"><i class="fa-brands fa-instagram"></i></a>
+            <a id="link"><i class="fa-brands fa-linkedin"></i></a>
+          </aside>
+          <!-- </article> -->
+        </section>
+        <!-- About Section -->
+        <section id="about" tabindex="2">
+          <article class="about_content">
+            <div id="first">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+              <ul class="items">
+                <li>
+                  <i class="fa fa-check-circle" aria-hidden="true"></i>
+                  <span
+                    >Ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat.</span
+                  >
+                </li>
+                <li>
+                  <i class="fa fa-check-circle" aria-hidden="true"></i
+                  ><span>
+                    Duis aute irure dolor in reprehenderit in voluptate
+                    velit.</span
+                  >
+                </li>
+                <li>
+                  <i class="fa fa-check-circle" aria-hidden="true"></i>
+                  <span>Ullamco laboris nisi ut aliquip ex ea commodo</span>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <p>
+                Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                aute irure dolor in reprehenderit in voluptate velit esse cillum
+                dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                cupidatat non proident, sunt in culpa qui officia deserunt
+                mollit anim id est laborum.
+              </p>
+            </div>
+          </article>
+        </section>
+        <!-- Contact section -->
+        <section id="contact" tabindex="3">
+          <h2>Contact</h2>
+          <p>
+            Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
+            consectetur velit
+          </p>
+          <article class="contact-grid">
+            <div id="First">
+              <i class="fa-solid fa-location-dot"></i>
+              <h3>Address</h3>
+              <p>A108 Adam Street</p>
+              <p>New York, NY 535022</p>
+            </div>
+            <div id="Second">
+              <i class="fa-solid fa-phone"></i>
+              <h3>Call Us</h3>
+              <p>+1 5589 55488 55</p>
+              <p>+1 6678 254445 41</p>
+            </div>
+            <div id="Third">
+              <i class="fa-solid fa-envelope"></i>
+              <h3>Email Us</h3>
+              <p>info@example.com</p>
+              <p>contact@example.com</p>
+            </div>
+            <div id="Fourth">
+              <i class="fa-solid fa-clock"></i>
+              <h3>Open Hours</h3>
+              <p>Monday - Friday</p>
+              <p>9:00AM - 05:00PM</p>
+            </div>
+            <div id="Fifth">
+              <div class="Form-container">
+                <div id="field1">
+                  <input
+                    type="text"
+                    id="name"
+                    name="FullName"
+                    placeholder="Your Name"
+                  />
+                  <input
+                    type="email"
+                    name="email"
+                    id="Email"
+                    placeholder="Your Mail"
+                  />
+                </div>
+                <div id="field2">
+                  <input type="text" name="Subject" id="subject" placeholder="Subject"/>
+                </div>
+                <div id="field3">
+                  <textarea name="Message" id="msg" placeholder="Message"></textarea>
+                </div>
+                <div id="field4">
+                  <button type="submit">Send Message</button>
+                </div>
+              </div>
+            </div>
+          </article>
+        </section>
+        <!-- Footer section -->
+        <section id="footer">
+          <footer class="FootContainer">
+            <p>© Copyright ComingSoon All Rights Reserved</p>
+            <aside class="social">
+              <a><i class="fa-brands fa-x-twitter"></i></a>
+              <a><i class="fa-brands fa-facebook"></i></a>
+              <a><i class="fa-brands fa-instagram"></i></a>
+              <a><i class="fa-brands fa-linkedin"></i></a>
+            </aside>
+            <p class="Designed">Designed by <a href="">BootstrapMade</a></p>
+          </footer>
+        </section>
+      </main>
+    </section>
+  </body>
+</html>

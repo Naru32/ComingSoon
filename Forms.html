@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <td cellspacing="30px"><h1 style="background-color: aquamarine; text-align: center;">Employee registration form</h1></td>
+        </tr>
+        <form action="" method="get" autocomplete="on">
+            <table cellspacing="10px" cellpadding="2px">
+                <tr>
+                    <td><label for="fname">Fullname:</label></td>
+                    <td><input type="name" id="fname" required maxlength="20" placeholder="Fullname" aria-required="true"></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email:</label></td>
+                    <td><input type="email" name="Email" id="email" placeholder="Email"  pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"></td>
+                </tr>
+                <tr>
+                    <td><label for="Pass">Password</label></td>
+                    <td><input type="password" name="pass" id="Pass" placeholder="Password mandatory" required minlength="8" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,}$" ></td>
+                </tr>
+                <tr>
+                    <td><label for="Gender">Gender</label></td>
+                    <td>
+                        <input type="radio" name="gender" value="Male" id="Gender" checked aria-required="true" aria-label="GenderMale">Male
+                        <input type="radio" name="gender" value="Female" id="Gender" required aria-required="true" aria-label="GenderFemale">Female
+                        <input type="radio" name="gender" id="Gender" value="Others">Others
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="Age">Age</label></td>
+                    <td><input type="number" id="Age" min="1" max="100"></td>
+                </tr>
+                <tr>
+                    <td><label for="Experience">Experience</label></td>
+                    <td><input type="range" name="Exp" id="Experience" max="10" min="2"></td>
+                </tr>
+                <tr>
+                    <td><label for="contact">Contact</label></td>
+                    <td><input type="tel" pattern="[0-9]{10}" name="Contact" id="contact" minlength="10" maxlength="10"></td>
+                </tr>
+                <tr>
+                    <td><label for="skills">Skills</label></td>
+                    <td><input type="checkbox" name="Skills1" id="skills" value="Html">Html
+                    <input type="checkbox" name="Skills2" id="skills" value="JS">js
+                    <input type="checkbox" name="Skills3" id="skills" value="css">css</td>
+                </tr>
+                <tr>
+                    <td><label for="userSearch">Search user</label></td>
+                    <td><input type="search" name="Search" id="userSearch"></td>
+                </tr>
+                <tr>
+                    <td><label for="Favourite">Favourite Color</label></td>
+                    <td><input type="color" name="FavColor" id="Favourite"></td>
+                </tr>
+                <tr>
+                    <td><label for="DOJ">Date Of Joining</label></td>
+                    <td><input type="date" name="DateOfJoining" id="DOJ" min="2025-01-01" max="2025-09-17"></td>
+                </tr>
+                <tr>
+                    <td><label for="ReportingT">Reporting Time</label></td>
+                    <td><input type="time" name="Reporting" id="ReportingT"></td>
+                </tr>
+                <tr>
+                    <td><label for="Add">Address</label></td>
+                    <td><textarea name="Address" id="Add" rows="3" cols="20"></textarea></td>
+                </tr>
+                <tr>
+                    <td><label for="Vacation">Vacation</label></td>
+                    <td><input type="week" name="vacation" id="Vacation" minlength="2025-W44" maxlength="2025-W46"></td>
+                </tr>
+                <tr>
+                    <td><label for="resume">Uploade Resume</label></td>
+                    <td><input type="file" name="Resume" id="resume" accept=".txt, .pdf"></td>
+                </tr>
+                <tr>
+                    <td><label for="country">Country</label></td>
+                    <td>
+                    <select name="Country" id="">
+                        <option value="India">India</option>
+                        <option value="Russia">Russia</option>
+                        <option value="China">China</option>
+                    </select>
+                </td>
+                </tr>
+                <tr>
+                    <td><button type="submit">submit</button> <input type="reset" value="Clear Form"></td>
+                </tr>
+            </table>
+
+        </form>
+    </table>
+</body>
+</html>

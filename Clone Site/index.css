@@ -1,0 +1,601 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-image: url('./assets/bg.jpg');
+    background-position: top center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 0;
+}
+
+.back{
+    position: relative;
+    top: 0px;
+    left: 0px;
+    height: 255vh;
+    width: 100%;
+    background-color: rgba(41, 43, 43, 0.5); /* here we didnt took opacity because it may affect content inside it istead use alpha value */
+    z-index: 1;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    position: relative;
+    top: 80px;
+    left: 0px;
+    /* height: 100vh; */
+    width: 100%;
+    z-index: 2;
+}
+
+.header{
+    position: fixed;
+    height: 10%;
+    width: 100%;
+    background-color: transparent;
+    z-index: 3;
+}
+
+.navbar{
+    position: relative;
+    top: 15px;
+    width: 100%;
+    padding: 15px;
+    background-color: transparent;
+    display: grid;
+    grid-template-columns: repeat(7, auto);
+    grid-template-rows: 40px;
+    align-content: center;
+}
+
+h1{
+    color: white;
+    font-weight: 800;
+    font-family: "Raleway", sans-serif;
+    grid-area: 1/1/1/4;
+}
+
+.menu{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    grid-area: 1/7/1/7;
+}
+
+ul{
+    display: flex;
+    height: 40px;
+    justify-content: space-around;
+    align-items: center;
+    text-decoration: none;
+}
+
+
+li a{
+    text-decoration: none;
+    font-size: larger;
+    font-weight: 400;
+    color: gray;
+}
+
+@keyframes Hover {
+0%{
+   border-bottom-width: 5.5px solid red;
+}
+25%{
+    border-bottom-width: 10.5px solid red;
+}
+50%{
+    border-bottom-width: 2.5px solid red;
+}
+75%{
+    border-bottom-width: 3.5px solid red;
+}
+100%{
+    border-bottom-width: 5.5px solid red;
+}
+}
+
+li #About:hover {
+    color: beige;
+    padding-bottom: 5px;
+    animation: Hover 2s linear 0s 1 forwards;
+}
+
+li #Home{
+    color: white;
+    border-bottom: 3px solid red;
+    padding-bottom: 5px;
+}
+
+@keyframes fadein {
+    from { top: 0px; opacity: 0;}
+    to { top: -5px; opacity: 1;}
+}
+
+#home{
+    position: relative;
+    top: 30px;
+    height: 60%;
+    width: 60%;
+    background-color: transparent;
+     display: flex;
+    flex-direction: column;
+    justify-content: center;
+     align-items: center;
+     gap: 25px;
+     animation: fadein 0.4s ease-out 0s 1 forwards;
+}
+
+.heading{
+    color: white;
+    font-size: xx-large;
+    font-weight: 600;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+summary{
+    color: white;
+    font-size: large;
+}
+
+.counter{
+   display: grid;
+   grid-template-columns: repeat(4,auto);
+   column-gap: 4px;
+}
+
+#day{
+    grid-area: 1/1/1/1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255 255 255 / 10%);
+    border-top: 2px solid red;
+    padding: 15px;
+        font-weight: 700;
+    font-size: 32px;
+    margin-bottom: 15px;
+    color: white;
+}
+
+
+#hrs{
+    grid-area: 1/2/1/3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255 255 255 / 10%);
+    border-top: 2px solid red;
+    padding: 15px;
+        font-weight: 700;
+    font-size: 32px;
+    margin-bottom: 15px;
+    color: white;
+}
+
+#min{
+    grid-area: 1/3/1/4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255 255 255 / 10%);
+    border-top: 2px solid red;
+    padding: 15px;
+        font-weight: 700;
+    font-size: 32px;
+    margin-bottom: 15px;
+    color: white;
+}
+
+#sec{
+    grid-area: 1/4/1/4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255 255 255 / 10%);
+    border-top: 2px solid red;
+    padding: 15px;
+    font-weight: 700;
+    font-size: 32px;
+    margin-bottom: 15px;
+    color: white;
+}
+
+.msg{
+    font-size: 18px;
+    margin: 0 0 15px 0;
+    color: white;
+    font-weight: 400;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.Subscribe{
+    width: 350px;
+    margin-bottom: 15px;
+    padding: 0px 0px;
+    position: relative;
+    background-color: rgb(255 255 255 / 10%);
+    border: 1px solid
+ color-mix(in srgb, #ffffff, transparent 80%);
+    box-shadow: 0px 0 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    transition: 0.3s;
+    border-radius: 4px;
+}
+
+.Subscribe #email{
+    border: 0;
+    padding: 4px;
+    width: 100%;
+    background-color: transparent;
+    color: #e7e5e5;
+}
+
+#email:focus {
+  outline: none;          
+  border: 2px solid red;
+}
+
+.Subscribe #btn{
+    background-color: red;
+    color: white;
+    padding: 13px;
+    border: none;
+}
+
+#home .social{
+    height: 50px;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: rgba(255, 237, 237, 0.534);
+    font-size: x-large;
+}
+
+#home .social #x:hover{
+    color: #e7e5e5;
+    cursor: pointer;
+}
+
+#home .social #fb:hover{
+    color: #e7e5e5;
+    cursor: pointer;
+}
+
+#home .social #insta:hover{
+    color: #e7e5e5;
+    cursor: pointer;
+}
+
+#home .social #link:hover{
+    color: #e7e5e5;
+    cursor: pointer;
+}
+
+#about{
+    position: relative;
+    top: 50px;
+    height: 250px;
+    width: 70%;   
+    animation: fadein 0.4s ease-out 0s 1 forwards;
+}
+
+.about_content{
+    display: grid;
+    grid-template-columns: repeat(2,auto); 
+    color: #ffffff;
+    font-size: large;
+    font-weight: 400;  
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.items{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.items li i{
+    color: red;
+}
+
+#contact{
+    height: 70ch;
+    width: 70%; 
+    padding: 60px 0;
+    /* background-color: #ffffff; */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 15px;
+    animation: fadein 0.4s ease-out 0s 1 forwards;
+}
+
+#contact h2{
+    color: #e7e5e5;
+    font-size: xx-large;
+    font-weight: 600;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";       
+}
+
+#contact p{
+    color: #ffffff;
+    font-size: large;
+    font-weight: 400;  
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.contact-grid{
+ display: grid;
+ grid-template-columns: repeat(4,auto);
+ grid-template-rows: repeat(2,auto);
+ gap: 10px;
+ /* text-align: start; */
+}
+
+.contact-grid>div{
+    background-color: rgba(255, 255, 255, 0.267);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding: 30px;
+    gap: 5px;
+}
+
+#Fifth{
+    grid-area: 1/3/3/5; 
+    justify-content: start;
+}
+
+#First i{
+    font-size: xx-large;
+    color: red;
+}
+
+#Second i{
+    font-size: xx-large;
+    color: red;
+}
+
+#Third i{
+    font-size: xx-large;
+    color: red;
+}
+
+#Fourth i{
+    font-size: xx-large;
+    color: red;
+}
+
+#First h3{
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+#Second h3{
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+#Third h3{
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+#Fourth h3{
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+#First p{
+    color: #ffffff;
+    font-size: large;
+    font-weight: 400;  
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+#Second p{
+    color: #ffffff;
+    font-size: large;
+    font-weight: 400;  
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+#Third p{
+    color: #ffffff;
+    font-size: large;
+    font-weight: 400;  
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+#Fourth p{
+    color: #ffffff;
+    font-size: large;
+    font-weight: 400;  
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.Form-container{
+    height: 95%;
+    width: 30vw;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+#field1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+#field1 input{
+    outline: 0.5px solid whitesmoke;
+    border: none;
+    padding: 15px;
+    color: #ffffff;
+    width: 15vw;
+    background-color: transparent;
+    color: #e7e5e5;
+}
+
+#field1 input::placeholder{
+    font-size: 1rem;
+    color: #ffffff;
+    font-weight: 400;
+}
+
+#field1 input:focus {
+  outline: none;          
+  border: 2px solid red;
+}
+
+#field2 input{
+    outline: 0.5px solid whitesmoke;
+    border: none;
+    padding: 15px;
+    color: #ffffff;
+    width: 31vw;
+    background-color: transparent;
+    color: #e7e5e5;
+}
+
+#field2 input::placeholder{
+    font-size: 1rem;
+    color: #ffffff;
+    font-weight: 400;
+}
+
+#field2 input:focus {
+  outline: none;          
+  border: 2px solid red;
+}
+
+#field3{
+    height: 25vh;
+    width: 31vw;
+    background-color: transparent;
+}
+
+#field3 textarea{
+    outline: 0.5px solid whitesmoke;
+    border: none;
+    padding: 15px;
+    height: inherit;
+    color: #ffffff;
+    width: 31vw;
+    background-color: transparent;
+    color: #e7e5e5;
+}
+
+#field3 textarea::placeholder{
+    font-size: 1.2rem;
+    color: #ffffff;
+    font-weight: 400;
+}
+
+#field4 button{
+    padding: 15px 45px;
+    border-radius: 5px;
+    background-color: red;
+    color: #ffffff;
+    font-size: 17px;
+    font-weight: 400;
+    border: none;
+}
+
+#field4 button:hover{
+    cursor: pointer;
+    background-color: rgb(190, 13, 13);
+}
+
+#footer{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 130px;
+    height: 20%;
+    width: 65vw;
+    padding: 40px 0px;
+}
+
+.FootContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.FootContainer p{
+    color: #ffffff;
+    font-size: large;
+    font-weight: 400;
+}
+
+.FootContainer .social{
+    padding: 15px;
+    width: inherit;
+    display: flex;
+    justify-content: center;
+    gap: 30px;    
+}
+
+.FootContainer .social a i{
+    font-size: x-large;
+    border: 2px solid wheat;
+    padding: 12px;
+    color: rgba(255, 237, 237, 0.534);;
+    border-radius: 50%;
+}
+
+.FootContainer .social a i:hover{
+    border: 2px solid red;
+    color: red;
+    cursor: pointer;
+}
+
+.FootContainer .Designed{
+     color: #ffffff;
+    font-size: large;
+    font-weight: 400;   
+}
+
+.FootContainer .Designed a{
+    color: red;
+    text-decoration: none;
+}
+
+.FootContainer .Designed a:hover{
+    color: rgb(190, 13, 13);;
+}
